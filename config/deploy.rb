@@ -3,6 +3,7 @@ lock '3.4.0'
 
 set :application, 'demoapp'
 set :repo_url, 'https://github.com/technostacks/demoapp.git'
+set :deploy_to, '/var/www/home/technostacks/public_html/demoapp'
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
@@ -34,7 +35,7 @@ set :repo_url, 'https://github.com/technostacks/demoapp.git'
 # Default value for keep_releases is 5
 # set :keep_releases, 5
 
-namespace :deploy do
+namespace :technostacks do
 
   after :restart, :clear_cache do
     on roles(:web), in: :groups, limit: 3, wait: 10 do
