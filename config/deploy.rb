@@ -18,7 +18,7 @@ set :use_sudo, false
 #task :production do
 	role :web, "root@67.206.189.228"
 	role :app, "root@67.206.189.228"
-	role :db, "root@67.206.189.228", :primary=>true
+	#role :db, "root@67.206.189.228", :primary=>true
 
 	set :deploy_to, '/var/www/home/technostacks/public_html/demo/demoapp'
 	set :user, "root"
