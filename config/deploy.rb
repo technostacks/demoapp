@@ -2,7 +2,7 @@
 lock '3.4.0'
 
 set :application, "demoapp"
-set :repo_url, 'git@github.com:technostacks/demoapp.git'
+set :repository, 'git@github.com:technostacks/demoapp.git'
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
@@ -13,16 +13,16 @@ set :repo_url, 'git@github.com:technostacks/demoapp.git'
 # Default value for :scm is :git, type of repository
 set :scm, :git
 set :use_sudo, false
-#set :deploy_via, :copy
+set :deploy_via, :copy
 
-#task :production do
+task :production do
 	role :web, "root@67.206.189.228"
 	role :app, "root@67.206.189.228"
-	#role :db, "root@67.206.189.228", :primary=>true
+	role :db, "root@67.206.189.228", :primary=>true
 
 	set :deploy_to, '/var/www/home/technostacks/public_html/demo/demoapp'
 	set :user, "root"
-#end
+end
 
 #after "deploy:symlink", "deploy:link_config"
 #after "deploy:link_config", "deploy:migrate"
