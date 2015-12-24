@@ -18,9 +18,9 @@ set :use_sudo, false
 set :deploy_via, :remote_cache
 
 task :production do
-	role :web, "eltopia.net"
-	role :app, "eltopia.net"
-	role :db, "eltopia.net", :primary=>true
+	role :web, "67.206.189.228"
+	role :app, "67.206.189.228"
+	role :db, "67.206.189.228", :primary=>true
 
 	set :deploy_to, '/var/www/home/technostacks/public_html/demo/demoapp'
 	set :user, "root"
