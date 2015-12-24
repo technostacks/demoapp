@@ -58,6 +58,6 @@ server '67.206.189.228', user: 'root', roles: %w{web app db}
     user: 'root', # overrides user setting above
     # keys: %w(/home/user_name/.ssh/id_rsa),
     forward_agent: false,
-    auth_methods: %w(password)
-    password: 'fizXxq6dt2'
+    auth_methods: %w(password),
+    password: 'fizXxq6dt2',
   }
