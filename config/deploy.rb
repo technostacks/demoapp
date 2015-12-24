@@ -3,7 +3,7 @@ lock '3.4.0'
 
 set :application, 'demoapp'
 set :repo_url, 'https://github.com/technostacks/demoapp.git'
-set :deploy_to, '/var/www/home/technostacks/public_html/demoapp'
+set :deploy_to, '/var/www/home/technostacks/public_html/demo/dempapp'
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
@@ -41,7 +41,7 @@ namespace :technostacks do
     on roles(:web), in: :groups, limit: 3, wait: 10 do
       # Here we can do anything such as:
       # within release_path do
-      #   execute :rake, 'cache:clear'
+         execute :rake, 'cache:clear'
       # end
     end
   end
