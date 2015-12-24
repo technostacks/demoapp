@@ -3,7 +3,7 @@ lock '3.4.0'
 
 set :application, "demoapp"
 set :repository, 'git@github.com:technostacks/demoapp.git'
-set :deploy_to, '/var/www/home/technostacks/public_html/demo/demoapp'
+
 
 
 # Default branch is :master
@@ -14,6 +14,22 @@ set :deploy_to, '/var/www/home/technostacks/public_html/demo/demoapp'
 
 # Default value for :scm is :git, type of repository
 set :scm, :git
+set :use_sudo, false
+set :deploy_via, :remote_cache
+
+task :production do
+	role :web, "harvestapi.eltopia.net/demo/demoapp/"
+	role :app, "harvestapi.eltopia.net/demo/demoapp/"
+	role :db, "harvestapi.eltopia.net/demo/demoapp/", :primary=>true
+
+	set :deploy_to, '/var/www/home/technostacks/public_html/demo/demoapp'
+	set :user, "root"
+end
+
+after "deploy:symlink", "deploy:link_config"
+after "deploy:link_config", "deploy:migrate"
+
+
 
 # Default value for :format is :pretty
 set :format, :pretty
