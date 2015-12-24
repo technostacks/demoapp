@@ -53,11 +53,11 @@ server '67.206.189.228', user: 'root', roles: %w{web app db}
 # server 'example.com',
 #   user: 'user_name',
 #   roles: %w{web app},
- # set :ssh_options, {
- #  	verbose: :debug,
- #    user: 'root', # overrides user setting above
- #    # keys: %w(/home/user_name/.ssh/id_rsa),
- #    forward_agent: false,
- #    auth_methods: %w(password),
- #    password: 'fizXxq6dt2',
- #  }
+ set :ssh_options, {
+  	verbose: :debug,
+    user: 'root', # overrides user setting above
+    # keys: %w(/home/user_name/.ssh/id_rsa),
+    forward_agent: false,
+    auth_methods: %w(password),
+    password: 'fizXxq6dt2',
+  }
