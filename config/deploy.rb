@@ -13,12 +13,12 @@ set :repository, 'https://github.com/technostacks/demoapp.git'
 # Default value for :scm is :git, type of repository
 set :scm, :git
 set :use_sudo, false
-set :deploy_via, :copy
+#set :deploy_via, :copy
 
 #task :production do
-role :web, "root@67.206.189.228"
-role :app, "root@67.206.189.228"
-role :db, "root@67.206.189.228", :primary=>true
+#role :web, "root@67.206.189.228"
+#role :app, "root@67.206.189.228"
+#role :db, "root@67.206.189.228", :primary=>true
 
 set :deploy_to, '/var/www/home/technostacks/public_html/demo/demoapp'
 set :user, "root"
