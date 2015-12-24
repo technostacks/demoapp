@@ -49,6 +49,10 @@ set :pty, true
 
 # Default value for keep_releases is 5
 # set :keep_releases, 5
+set(:config_files, %w(
+  nginx.app.conf
+))
+
 
 namespace :deploy do
 
