@@ -18,9 +18,9 @@ set :use_sudo, false
 set :deploy_via, :remote_cache
 
 task :production do
-	role :web, "harvestapi.eltopia.net/demo/demoapp/"
-	role :app, "harvestapi.eltopia.net/demo/demoapp/"
-	role :db, "harvestapi.eltopia.net/demo/demoapp/", :primary=>true
+	role :web, "eltopia.net"
+	role :app, "eltopia.net"
+	role :db, "eltopia.net", :primary=>true
 
 	set :deploy_to, '/var/www/home/technostacks/public_html/demo/demoapp'
 	set :user, "root"
