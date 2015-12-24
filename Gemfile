@@ -6,4 +6,4 @@ gem 'capistrano'
 
 # other dependencies
 gem "capistrano-bundler"
-gem "capistrano-passanger"
+gem "capistrano-passenger"
