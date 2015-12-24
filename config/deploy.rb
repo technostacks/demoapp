@@ -14,7 +14,7 @@ role :app, "67.206.189.228"                          # This may be the same as y
 role :db,  "67.206.189.228", :primary => true # This is where Rails migrations will run
 
  
-default_run_options[:pty] = true
+
  
 namespace :deploy do
    task :start do ; end
