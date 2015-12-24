@@ -26,8 +26,8 @@ task :production do
 	set :user, "root"
 end
 
-after "deploy:symlink", "deploy:link_config"
-after "deploy:link_config", "deploy:migrate"
+#after "deploy:symlink", "deploy:link_config"
+#after "deploy:link_config", "deploy:migrate"
 
 
 
