@@ -54,9 +54,9 @@ server '67.206.189.228', user: 'root', roles: %w{web app}
 #   user: 'user_name',
 #   roles: %w{web app},
  set :ssh_options, {
-  	verbose: :debug,
-    user: 'root',
-    forward_agent: false,
-    auth_methods: %w(password),
-    password: 'fizXxq6dt2',
+  	#verbose: :debug,
+    #user: 'root',
+    forward_agent: true,
+    #auth_methods: %w(password),
+    #password: 'fizXxq6dt2',
   }
