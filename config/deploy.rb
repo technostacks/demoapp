@@ -35,7 +35,7 @@ set :deploy_to, '/var/www/home/technostacks/public_html/demo/dempapp'
 # Default value for keep_releases is 5
 # set :keep_releases, 5
 
-namespace :technostacks do
+namespace :deploy do
 
   after :restart, :clear_cache do
     on roles(:web), in: :groups, limit: 3, wait: 10 do
