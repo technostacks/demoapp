@@ -15,7 +15,7 @@ set :repository, 'git@github.com:technostacks/demoapp.git'
 # Default value for :scm is :git, type of repository
 set :scm, :git
 set :use_sudo, false
-set :deploy_via, :remote_cache
+#set :deploy_via, :remote_cache
 
 task :production do
 	role :web, "67.206.189.228"
