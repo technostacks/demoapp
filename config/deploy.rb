@@ -1,9 +1,10 @@
 # config valid only for current version of Capistrano
 lock '3.4.0'
 
-set :application, 'demoapp'
-set :repo_url, 'git@github.com:technostacks/demoapp.git'
+set :application, "demoapp"
+set :repository, 'git@github.com:technostacks/demoapp.git'
 set :deploy_to, '/var/www/home/technostacks/public_html/demo/demoapp'
+
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
