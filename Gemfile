@@ -7,3 +7,4 @@ gem 'capistrano'
 # other dependencies
 gem "capistrano-bundler"
 gem "capistrano-passenger"
+gem "sinatra-reloader"
