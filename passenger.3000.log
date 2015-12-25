@@ -54,3 +54,32 @@ App 10024 stdout:
 [ 2015-12-24 12:40:57.9498 9963/b65ffb40 Ser/Server.h:444 ]: [UstRouterApiServer] Shutdown finished
 [ 2015-12-24 12:40:57.9545 9963/b741e700 age/Ust/UstRouterMain.cpp:498 ]: Passenger UstRouter shutdown finished
 [ 2015-12-24 12:40:58.1627 9954/b7441700 age/Cor/CoreMain.cpp:942 ]: Passenger core shutdown finished
+[ 2015-12-25 11:11:01.2138 5268/b7448700 age/Wat/WatchdogMain.cpp:1276 ]: Starting Passenger watchdog...
+[ 2015-12-25 11:11:01.2208 5271/b7392700 age/Cor/CoreMain.cpp:957 ]: Starting Passenger core...
+[ 2015-12-25 11:11:01.2214 5271/b7392700 age/Cor/CoreMain.cpp:234 ]: Passenger core running in multi-application mode.
+[ 2015-12-25 11:11:01.2245 5271/b7392700 age/Cor/CoreMain.cpp:707 ]: Passenger core online, PID 5271
+[ 2015-12-25 11:11:01.2502 5276/b740c700 age/Ust/UstRouterMain.cpp:504 ]: Starting Passenger UstRouter...
+[ 2015-12-25 11:11:01.2512 5276/b740c700 age/Ust/UstRouterMain.cpp:317 ]: Passenger UstRouter online, PID 5276
+App 5323 stderr: stdin: is not a tty
+App 5323 stdout: 
+App 5323 stderr: /var/lib/gems/1.9.1/gems/bundler-1.10.6/lib/bundler/shared_helpers.rb:78: warning: Insecure world writable dir /var/lib/gems/1.9.1 in PATH, mode 040777
+App 5342 stdout: 
+
+[ 2015-12-25 11:12:44.0153 5276/b71ffb40 age/Ust/UstRouterMain.cpp:397 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+
+[ 2015-12-25 11:12:44.0154 5276/b740c700 age/Ust/UstRouterMain.cpp:467 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2015-12-25 11:12:44.0154 5271/b65ffb40 age/Cor/CoreMain.cpp:507 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2015-12-25 11:12:44.0154 5271/b7392700 age/Cor/CoreMain.cpp:876 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2015-12-25 11:12:44.0155 5271/b7392700 age/Cor/CoreMain.cpp:794 ]: Disconnecting long-running connections for process 5342, application /home/abc1/jagdish/sinatra_apps/demoapp/public (development)
+[ 2015-12-25 11:12:44.0155 5276/b65ffb40 Ser/Server.h:759 ]: [UstRouterApiServer] Freed 0 spare client objects
+[ 2015-12-25 11:12:44.0156 5276/b65ffb40 Ser/Server.h:444 ]: [UstRouterApiServer] Shutdown finished
+[ 2015-12-25 11:12:44.0156 5271/b65ffb40 Ser/Server.h:759 ]: [ServerThr.1] Freed 128 spare client objects
+[ 2015-12-25 11:12:44.0156 5271/b65ffb40 Ser/Server.h:444 ]: [ServerThr.1] Shutdown finished
+[ 2015-12-25 11:12:44.0156 5271/b5dfeb40 Ser/Server.h:759 ]: [ServerThr.2] Freed 128 spare client objects
+[ 2015-12-25 11:12:44.0157 5271/b5dfeb40 Ser/Server.h:444 ]: [ServerThr.2] Shutdown finished
+[ 2015-12-25 11:12:44.0158 5271/b557cb40 Ser/Server.h:759 ]: [ApiServer] Freed 0 spare client objects
+[ 2015-12-25 11:12:44.0158 5271/b557cb40 Ser/Server.h:444 ]: [ApiServer] Shutdown finished
+[ 2015-12-25 11:12:44.0159 5276/b71ffb40 Ser/Server.h:444 ]: [UstRouter] Shutdown finished
+[ 2015-12-25 11:12:44.0159 5271/b7392700 age/Cor/CoreMain.cpp:794 ]: Disconnecting long-running connections for process 5342, application /home/abc1/jagdish/sinatra_apps/demoapp/public (development)
+[ 2015-12-25 11:12:44.0183 5276/b740c700 age/Ust/UstRouterMain.cpp:498 ]: Passenger UstRouter shutdown finished
+[ 2015-12-25 11:12:44.2316 5271/b7392700 age/Cor/CoreMain.cpp:942 ]: Passenger core shutdown finished

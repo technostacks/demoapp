@@ -36,3 +36,6 @@ DEPENDENCIES
   capistrano-passenger
   net-ssh (~> 2.9.2)
   sinatra
+
+BUNDLED WITH
+   1.10.6
