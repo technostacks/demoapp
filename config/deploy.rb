@@ -2,7 +2,7 @@
 lock '3.4.0'
 
 set :application, "demoapp"
-set :repo_url, 'https://github.com/technostacks/demoapp.git'
+set :repository, 'https://github.com/technostacks/demoapp.git'
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
