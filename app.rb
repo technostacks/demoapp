@@ -10,7 +10,7 @@ require "sinatra"
 class Testing < Sinatra::Base
   register Sinatra::Reloader
   get "/" do
-    "Hello, all !"
+    "Hello, all  s!"
   end
 end
 
